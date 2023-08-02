@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RincianObat">
+
+    <TextView
+        android:id="@+id/txtjenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="RINCIAN OBAT"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/averiasanslibre"
+        android:textColor="@color/biru"/>
+
+    <ImageButton
+        android:id="@+id/btnback"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/outline_arrow_back_ios_24"
+        android:background="@color/white"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ww"
+        android:layout_below="@+id/txtjenis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card"
+            android:layout_width="138dp"
+            android:layout_height="138dp"
+            app:cardCornerRadius="10dp"
+            app:strokeWidth="3dp"
+            app:strokeColor="#858585"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_4"
+                />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/card"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="24dp"
+            android:text="bodrex"
+            android:textStyle="bold"
+            android:fontFamily="@font/averiasanslibre"
+            android:textColor="@color/black"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toEndOf="@id/card"
+            app:layout_constraintTop_toBottomOf="@id/txt1"
+            android:text="paracetamol"
+            android:fontFamily="@font/averiasanslibre"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toEndOf="@id/txt2"
+            app:layout_constraintTop_toBottomOf="@id/txt1"
+            android:layout_marginTop="5dp"
+            android:text="600"
+            android:fontFamily="@font/averiasanslibre"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toEndOf="@id/txt3"
+            app:layout_constraintTop_toBottomOf="@id/txt1"
+            android:text="mg"
+            android:fontFamily="@font/averiasanslibre"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/pp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toEndOf="@id/card"
+            app:layout_constraintTop_toBottomOf="@id/txt2"
+            android:text="Harga"
+            android:fontFamily="@font/averiasanslibre"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+
+        <TextView
+            android:id="@+id/rp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="25dp"
+            app:layout_constraintTop_toBottomOf="@id/txt2"
+            app:layout_constraintStart_toEndOf="@id/pp"
+            android:text="Rp."
+            android:fontFamily="@font/averiasanslibre"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toEndOf="@id/rp"
+            app:layout_constraintTop_toBottomOf="@id/txt2"
+            android:text="10.000"
+            android:fontFamily="@font/averiasanslibre"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/cc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail"
+        android:layout_marginStart="26dp"
+        android:layout_below="@id/ww"
+        android:layout_marginTop="20dp"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/averiasanslibre"
+        />
+
+    <ScrollView
+        android:id="@+id/ppp"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_below="@id/cc"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Bodrex adalah obat yang bermanfaat untuk meringankan sakit kepala, sakit gigi, dan menurunkan demam. Beberapa varian Bodrex juga dapat meredakan gejala flu dan batuk, seperti hidung tersumbat, bersin-bersin, dan batuk."
+            android:layout_marginStart="26dp"
+            android:fontFamily="@font/averiasanslibre"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dosis dan Aturan Pakai Bodrex"
+        android:layout_marginStart="26dp"
+        android:layout_below="@id/ppp"
+        android:layout_marginTop="20dp"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/averiasanslibre"
+        />
+
+        <LinearLayout
+            android:id="@+id/oo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_edittext"
+            app:cardCornerRadius="10dp"
+            android:layout_below="@id/txt5"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="20dp"
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/txt6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="Kondisi: Sakit kepala, sakit gigi, atau demam
+    Dewasa dan anak usia >12 tahun: 1 tablet, 3–4 kali sehari.
+    Anak-anak usia 6–12 tahun: ½ –1 tablet, 3–4 kali sehari."
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+            </ScrollView>
+
+        </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnback2"
+        android:layout_width="377dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@color/biru"
+        android:fontFamily="@font/averiasanslibre"
+        android:text="Kembali"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
+
+</RelativeLayout>

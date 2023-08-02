@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuArtikel">
+
+    <TextView
+        android:id="@+id/txtjenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="JENIS OBAT"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/averiasanslibre"
+        android:textColor="@color/biru"/>
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtjenis"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="30dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/a1"
+                android:layout_width="150dp"
+                android:layout_height="250dp"
+                android:background="#D9D9D9"
+                android:layout_marginTop="30dp">
+                
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/img_5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/img"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="Penyebab kamu sakit kepala"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/averiasanslibre"
+                    android:textAlignment="center"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/a3"
+                android:layout_width="150dp"
+                android:layout_height="250dp"
+                android:background="#D9D9D9"
+                android:layout_marginTop="50dp">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/img_7"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/img2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="Hal yang harus di hindari saat sakit flu"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/averiasanslibre"
+                    android:textAlignment="center"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </TableRow>
+    </TableLayout>
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtjenis"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentEnd="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/a2"
+                android:layout_width="150dp"
+                android:layout_height="250dp"
+                android:background="#D9D9D9"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/img_6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/img3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="cara mengobati sesak nafas"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/averiasanslibre"
+                    android:textAlignment="center"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/a4"
+                android:layout_width="150dp"
+                android:layout_height="250dp"
+                android:background="#D9D9D9"
+                android:layout_marginTop="50dp">
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/img_8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/img4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="Gejala saat kamu demam"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/averiasanslibre"
+                    android:textAlignment="center"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </TableRow>
+    </TableLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnback2"
+        android:layout_width="377dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@color/biru"
+        android:fontFamily="@font/averiasanslibre"
+        android:text="Kembali"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "13117236784",
+    "project_id": "uass-bebaa",
+    "storage_bucket": "uass-bebaa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13117236784:android:409423212f37f49333aff5",
+        "android_client_info": {
+          "package_name": "com.example.uas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13117236784-e01834sr3n1rfvg03fcngii4qqmpudvq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9TOCO2V5eGkHhG8UeaUoiKbYK7nlDauA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13117236784-e01834sr3n1rfvg03fcngii4qqmpudvq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

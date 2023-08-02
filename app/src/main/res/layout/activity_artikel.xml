@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Artikel">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/img_5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_below="@id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Penyebab kamu sakit kepala"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/averiasanslibre"
+            android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_below="@id/txt"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Sakit kepala umumnya dapat diobati dengan pola hidup sehat, relaksasi, atau konsumsi obat pereda nyeri. Namun, sakit kepala terkadang juga bisa terkait dengan penyakit atau cedera serius sehingga memerlukan penanganan lebih lanjut.
+Berdasarkan penyebabnya, sakit kepala terbagi menjadi sakit kepala primer dan sekunder. Sakit kepala primer juga dapat disebabkan oleh perilaku sehari-hari yang tidak baik, seperti kurang tidur, telat makan, atau pilihan makanan yang kurang tepat. Sementara sakit kepala sekunder terjadi akibat penyakit tertentu yang mengaktifkan saraf nyeri di kepala."
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/averiasanslibre"/>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnback2"
+        android:layout_width="377dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@color/biru"
+        android:fontFamily="@font/averiasanslibre"
+        android:text="Kembali"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
+</RelativeLayout>

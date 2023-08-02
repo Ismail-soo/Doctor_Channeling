@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuObat">
+
+    <TextView
+        android:id="@+id/txtjenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:text="JENIS OBAT"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/averiasanslibre"
+        android:textColor="@color/biru"/>
+    
+    <ImageButton
+        android:id="@+id/btnback"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="73dp"
+        android:src="@drawable/outline_arrow_back_ios_24"
+        android:background="@color/white"/>
+
+    <EditText
+        android:id="@+id/bb"
+        android:layout_below="@id/txtjenis"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Search For.."
+        android:textSize="20sp"
+        android:drawableStart="@drawable/baseline_search_24"
+        android:paddingStart="24dp"
+        android:drawablePadding="21dp"
+        android:paddingEnd="17dp"
+        android:background="@drawable/search_edittext"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userList"
+        android:layout_below="@+id/bb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/list"/>
+</RelativeLayout>

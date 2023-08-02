@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/menuObat">
+
+    <activity
+        android:id="@+id/menuObat"
+        android:name="com.example.uas.MenuObat"
+        android:label="activity_menu_obat"
+        tools:layout="@layout/activity_menu_obat" />
+    <fragment
+        android:id="@+id/rincianObatFragment"
+        android:name="com.example.uas.fragment.RincianObatFragment"
+        android:label="fragment_rincian_obat"
+        tools:layout="@layout/fragment_rincian_obat" />
+</navigation>
